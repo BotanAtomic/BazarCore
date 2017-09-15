@@ -1,0 +1,100 @@
+import groovy.xml.MarkupBuilder
+import org.jooq.util.GenerationTool
+
+import javax.xml.bind.JAXB
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+configurations {
+    provided
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'nu.studer:gradle-jooq-plugin:+'
+        classpath 'mysql:mysql-connector-java:+'
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.15.Final'
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '+'
+    compile group: 'joda-time', name: 'joda-time', version: '+'
+    compile group: 'com.google.inject', name: 'guice', version: '+'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.jooq', name: 'jooq', version: '+'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '+'
+    compile group: 'org.json', name: 'json', version: '20170516'
+
+    compile 'org.jooq:jooq-meta:+'
+    compile 'org.jooq:jooq-codegen:+'
+    compileOnly "org.projectlombok:lombok:+"
+    compile group: 'mysql', name: 'mysql-connector-java', version: '+'
+}
+
+sourceSets {
+    main { compileClasspath += configurations.provided }
+}
+idea { module { scopes.PROVIDED.plus += [configurations.provided] } }
+
+task generateDatabase {
+    doLast {
+        // Use your favourite XML builder to construct the code generation configuration file
+        // ----------------------------------------------------------------------------------
+        def writer = new StringWriter()
+        //noinspection GroovyUnusedAssignment
+        def xml = new MarkupBuilder(writer)
+                .configuration('xmlns': 'http://www.jooq.org/xsd/jooq-codegen-3.9.2.xsd') {
+            jdbc() {
+                driver('com.mysql.cj.jdbc.Driver')
+                url('jdbc:mysql://localhost/bazar?serverTimezone=UTC&useSSL=false')
+                user('root')
+                password('')
+                schema('bazar')
+            }
+
+            generator() {
+                name('org.jooq.util.JavaGenerator')
+
+                database() {
+                    name('org.jooq.util.mysql.MySQLDatabase')
+                    inputSchema('bazar')
+                }
+                generate() {
+                    relations(true)
+                    deprecated(false)
+                    records(true)
+                    immutablePojos(true)
+                    fluentSetters(true)
+                }
+
+                target() {
+                    packageName('org.graviton.bazar.database.generated')
+                    directory('src/main/java')
+                }
+            }
+        }
+
+        // Run the code generator
+        // ----------------------
+        GenerationTool.generate(
+                JAXB.unmarshal(
+                        new StringReader(writer.toString()),
+                        org.jooq.util.jaxb.Configuration.class
+                )
+        )
+    }
+}

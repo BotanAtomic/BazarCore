@@ -1,0 +1,65 @@
+04:18:13:307 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:37:14:172 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:37:30:636 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:37:40:680 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:37:55:347 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:48:04:884 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:48:05:505 [main] o.graviton.bazar.database.Database - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+04:59:26:765 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+04:59:27:438 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:12:46:239 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:12:47:103 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:13:25:868 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:13:26:569 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:13:26:825 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:17:23:116 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:18:11:278 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:18:12:059 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:18:12:291 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:21:08:801 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:21:42:589 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:21:53:949 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:22:17:246 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:22:28:822 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:23:38:733 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:23:39:501 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:23:39:728 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:24:17:040 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:24:17:834 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:24:18:075 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:28:52:357 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:28:53:147 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:28:53:151 [main] o.g.bazar.network.ServerService - Server bind on port 12500
+23:28:53:376 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:29:03:951 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:29:04:775 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:29:04:779 [main] o.g.bazar.network.ServerService - Server bind on port 12500
+23:29:05:017 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:29:15:483 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:29:16:266 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:29:16:269 [main] o.g.bazar.network.ServerService - Server bind on port 14600
+23:29:16:507 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:29:30:009 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:29:30:800 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:29:30:803 [main] o.g.bazar.network.ServerService - Server bind on port 1799
+23:29:31:028 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:30:31:005 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:30:31:789 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:30:51:565 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:30:52:361 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:30:52:365 [main] o.g.bazar.network.ServerService - Server bind on port 56156
+23:30:52:590 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:31:45:948 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:31:46:717 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:31:46:720 [main] o.g.bazar.network.ServerService - Server bind on port 56156
+23:31:46:944 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:32:38:732 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:32:39:520 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:32:54:156 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:32:54:960 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:32:54:963 [main] o.g.bazar.network.ServerService - Server bind on port 1799
+23:32:55:191 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:44:31:617 [main] org.graviton.bazar.utils.Header - Server build : 0.0.1
+23:44:32:412 [main] o.g.bazar.database.DatabaseService - connected to database server [jdbc:mysql://localhost/bazar?serverTimezone=UTC]
+23:44:32:650 [main] o.g.b.repository.AnnounceRepository - 0 announces loaded
+23:44:32:653 [main] o.g.bazar.network.ServerService - Server bind on port 1799

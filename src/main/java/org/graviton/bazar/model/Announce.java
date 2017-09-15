@@ -42,7 +42,7 @@ public class Announce {
         this.date = new Date(record.get(ANNOUNCES.DATE));
         this.imageCount = record.get(ANNOUNCES.IMAGES_COUNT);
 
-        String favoriteData = getOrElse(record.get(ANNOUNCES.FAVORITES));
+        String favoriteData = getOrElse(record.get(ANNOUNCES.FAVORITES), "");
         if (!favoriteData.isEmpty())
             this.favorites = Stream.of(favoriteData.split(",")).collect(Collectors.toCollection(CopyOnWriteArrayList::new));
         else
